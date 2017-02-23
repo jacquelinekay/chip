@@ -1,0 +1,30 @@
+{
+  "kvasir": {
+    "io": {
+      "default": {
+        "type":"group",
+        "ports":"A-D",
+        "peripheral":"PIO%s"
+      },
+      "output":{
+          "value":1,
+          "register":"OER"
+      },
+      "input":{
+          "value":1,
+          "register":"ODR"
+      },
+      "set":{
+          "value":1,
+          "register":"SODR"
+      },
+      "clear":{
+          "value":1,
+          "register":"CODR"
+      },
+      "read":{
+          "register":"PDSR"
+      }
+    }
+  }
+}
