@@ -3,27 +3,23 @@
     "io": {
       "default": {
         "type":"group",
-        "ports":"A-D",
-        "peripheral":"PIO%s"
+        "ports":"0",
+        "peripheral":"P%s"
       },
       "output":{
           "value":1,
-          "register":"OER"
-      },
-      "input":{
-          "value":1,
-          "register":"ODR"
+          "register":"DIRSET"
       },
       "set":{
           "value":1,
-          "register":"SODR"
+          "register":"OUTSET"
       },
       "clear":{
           "value":1,
-          "register":"CODR"
+          "register":"OUTCLR"
       },
       "read":{
-          "register":"PDSR"
+          "register":"IN"
       }
     }
   }
